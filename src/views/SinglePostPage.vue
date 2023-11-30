@@ -23,11 +23,11 @@
               <h2 class="pt-2 tm-color-primary tm-post-title">{{ this.$store.state.posts.length > 0 ? this.$store.state.posts[0].title : 'No posts'  }}</h2>
               <p> {{this.$store.state.posts.length > 0 ? this.$store.state.posts[0].body : 'No posts'  }} </p>
 
-              <div class="d-block text-right tm-color-primary" > Теги:
+              <div class="d-block tm-color-primary" >Теги:
               <a v-for="(tags, j) in  this.$store.state.posts[0].tags  " :key="j">
     {{ tags  }}&nbsp;
     </a>
-                <div class="tm-color-primary"> Категория: {{this.$store.state.posts.length > 0 ? this.$store.state.posts[0].categori : 'No posts' }}</div>
+                <div class="tm-color-primary"> Категории: {{this.$store.state.posts.length > 0 ? this.$store.state.posts[0].categori : 'No posts' }}</div>
   </div>
 
 
@@ -36,9 +36,9 @@
         </div>
 
       </div>
-
+      <my-footer></my-footer>
     </main>
-    <my-footer></my-footer>
+
   </div>
 
 </template>

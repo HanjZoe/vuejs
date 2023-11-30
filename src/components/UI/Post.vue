@@ -12,7 +12,7 @@
      :post = "post">
 
   <div class="tm-post-link-inner">
-    <img :src="value" alt="Image" class="img-fluid">
+    <img :src="post.images" alt="Image" class="img-fluid">
 
   </div>
 
@@ -45,7 +45,7 @@ export default {
     },
   data(){
     return {
-      value: this.post.images,
+      //value: this.post.images,
       EditPostVisible: false,
     }
   },
@@ -58,7 +58,6 @@ export default {
     },
     removePost(post){
       this.$store.commit('removePost',post);
-     console.log(post);
     }
   }
 }

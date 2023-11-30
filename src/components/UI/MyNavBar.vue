@@ -11,7 +11,7 @@
       <my-dialog v-model:show = "CreatePostVisible" ><create-post-page  @create = "CreatePost"></create-post-page></my-dialog>
       <li class="tm-nav-item"><a type="Button" class="tm-nav-link" @click="ShowDialog">
         <i class="fas fa-pen"></i>
-        Созадать пост
+        Создать пост
       </a></li>
     </ul>
   </nav>
