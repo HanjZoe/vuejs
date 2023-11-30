@@ -5,10 +5,10 @@
 
         <hr class="col-12">
         <div class="col-md-6 col-12 tm-color-gray content" >
-          Design by: <a rel="nofollow"  class="tm-external-link footer_color">Бездарь</a>
+          Design by: <a rel="nofollow"  class="tm-external-link footer_color">111</a>
         </div>
         <div class="col-md-6 col-12 tm-color-gray tm-copyright footer">
-          Copyright 2023 Алкаш Co. Ltd.
+          Copyright 2023
         </div>
 
       </footer>

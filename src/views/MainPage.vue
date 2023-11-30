@@ -51,10 +51,6 @@ export default {
     createPost(post) {
      this.posts.push(post);
     },
-    removePost(post){
-
-      this.posts = this.posts.filter(p => p.id !== post.id);
-    },
     updatePost(postUpdate){
       this.posts = this.posts.filter(p => p.id !== postUpdate.id);
       this.posts.push(postUpdate);

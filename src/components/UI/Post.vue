@@ -9,10 +9,13 @@
   <my-dialog v-model:show = "EditPostVisible" ><my-edit-post  :post = this.post  @create = "HideDialog"></my-edit-post></my-dialog>
   <a class="effect-lily tm-post-link tm-pt-20" type="Button"
      @click="$router.push(`/post/${post.id}`)"
-     :post = "post">
+     :post = this.post>
 
   <div class="tm-post-link-inner">
-    <img :src="post.images" alt="Image" class="img-fluid">
+    <img v-if="post.images.length == 0" src="https://learnsql.com/blog/null-comparison-operators/null-comparison-operators_hu287fbed630283b8615cf65604ff6d42b_8080774_968x550_fill_box_center_2.png" width="402" height="200">
+    <img v-else :src="post.images" width="402" height="200">
+
+
 
   </div>
 
@@ -23,11 +26,15 @@
 </p>
 <div class="d-flex justify-content-between tm-pt-45">
   <span class="tm-color-primary" >
+
+      <a v-if="post.tags.length == 0">Нету</a>
+
     <a v-for="(tags, j) in post.tags" :key="j">
     {{ tags  }}&nbsp;
     </a>
+
   </span>
-  <span class="tm-color-primary">{{post.categori}}</span>
+  <span class="tm-color-primary">{{post.categori == "" ? "Нету" :post.categori }}</span>
 </div>
 <hr>
 
@@ -45,7 +52,9 @@ export default {
     },
   data(){
     return {
-      //value: this.post.images,
+      alts: this.$store.state.altImage,
+
+
       EditPostVisible: false,
     }
   },

@@ -11,7 +11,7 @@ export default createStore({
             {title: "Тег 2", shortcut: "Тег 2"},
             {title: "Тег 3", shortcut: "Тег 3"},
         ],
-
+        altImage: "https://learnsql.com/blog/null-comparison-operators/null-comparison-operators_hu287fbed630283b8615cf65604ff6d42b_8080774_968x550_fill_box_center_2.png",
         categoris:["Категория 1", "Категория 2", "Категория 3"],
     }),
     getters:{
@@ -36,6 +36,13 @@ export default createStore({
             state.searchQuery = searchQuery;
         },
         createPost(state, post) {
+
+             if(post.title.length == ""){
+                 post.title = "Тут мог быть ваш заголовок";
+             }
+             if(post.body.length == ""){
+                 post.body = "Тут могла быть ваша статья";
+             }
             state.posts.push(post);
         },
         removePost(state, post){

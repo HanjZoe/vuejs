@@ -1,7 +1,7 @@
 <template>
 
   <h2 class="tm-pt-30 tm-color-primary tm-post-title">
-    Редактировние поста
+    Редактирование поста
   </h2>
   <div class="padd">
   </div>
