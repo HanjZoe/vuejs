@@ -2,7 +2,7 @@
 
 <article class="col-12 col-md-4 tm-post">
 
-<hr class="tm-hr-primary">
+
 
   <my-button class="position-absolute tm-right-button" @click.stop="removePost(post)" ><i class="fas fa-trash tm-search-icon" aria-hidden="true"></i></my-button>
   <my-button class="position-absolute tm-left-button" @click="ShowDialog"> <i class="fas fa-pen tm-search-icon" aria-hidden="true"> </i></my-button>
@@ -10,8 +10,9 @@
   <a class="effect-lily tm-post-link tm-pt-20" type="Button"
      @click="$router.push(`/post/${post.id}`)"
      :post = this.post>
+    <hr class="tm-hr-primary">
+    <div class="tm-post-link-inner">
 
-  <div class="tm-post-link-inner">
     <img v-if="post.images.length == 0" src="https://learnsql.com/blog/null-comparison-operators/null-comparison-operators_hu287fbed630283b8615cf65604ff6d42b_8080774_968x550_fill_box_center_2.png" width="402" height="200">
     <img v-else :src="post.images" width="402" height="200">
 
