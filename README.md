@@ -84,7 +84,7 @@ docker run имя_image/id_image
 ### Есть возможно создавать новые посты редактированить удалять и смотреть 
 ### Поиск ищет совпадения как в загловке статьи так и не посредственно и в "теле" статьи
 
-![](https://disk.yandex.ru/d/kvIuZsZXSaiAQg)
-![](https://disk.yandex.ru/i/I6Cl2AJOt981Qw)
-![](https://disk.yandex.ru/i/idCbuU3UzzYBVQ)
-![](https://disk.yandex.ru/i/bBmE7ffJOJWL_A)
+![Текст описания](https://disk.yandex.ru/d/kvIuZsZXSaiAQg)
+![Текст описания](https://disk.yandex.ru/i/I6Cl2AJOt981Qw)
+![Текст описания](https://disk.yandex.ru/i/idCbuU3UzzYBVQ)
+![Текст описания](https://disk.yandex.ru/i/bBmE7ffJOJWL_A)
