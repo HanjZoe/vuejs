@@ -34,7 +34,7 @@
     {{ tags  }}&nbsp;
     </a>
 
-                <div class="tm-color-primary"> Категории: {{this.$store.state.posts.length > 0 ? 'Нету'  : this.$store.state.post[0].categori}}</div>
+                <div class="tm-color-primary"> Категории: {{this.$store.state.posts.length > 0 ? this.$store.state.post[0].categori  : 'Нету'}}</div>
   </div>
 
 

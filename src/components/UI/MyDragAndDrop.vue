@@ -6,7 +6,7 @@
       <span v-if="!isDragging">
 Перетащите сюда картинку или
         <span class ="select" role="button" @click="selectFiles">
-          Добавте
+          Добавьте
         </span>
       </span>
       <div v-else class="select">Перетащите сюда</div>
