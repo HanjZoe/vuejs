@@ -1,0 +1,16 @@
+version: '3.3'
+
+networks:
+  lifeforhost:
+    name: lifeforhost
+
+services:
+  nodejs:
+    container_name: node
+    restart: always
+    build: ./build/
+    volumes:
+      - ${project_dir}:/app
+    command: sh -c "npm install && npm run build"
+    networks:
+      - lifeforhost
